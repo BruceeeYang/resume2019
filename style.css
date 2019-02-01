@@ -486,11 +486,83 @@
     };
 
     /* -----------------aboutme----------------- */
+    #aboutMe{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        /* position: relative; */
+        background-color: pink;
+        margin: 0;
+        left: 0;
+    }
+
+    .aboutme-left {
+        padding: 0px;
+        max-width: 50%;
+        list-style: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 40%;
+    }
     
-    .aboutMe{
+    .aboutme-left li {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .aboutme-left figure {
+        margin: 0;
+        position: relative;
+        box-shadow: 1px 1px 10px 1px #c4c1c1;
+
+    }
+    
+    .aboutme-left figure img {
+        max-width: 100%;
+        display: block;
+    }
+    
+    .aboutme-left {
+        position: absolute;
+    }
+
+    figcaption{
         display: none;
     }
+
+    .aboutme-right{
+        width: 60%;
+    }
+    
+    .aboutme-right-intro{
+        width: 50%;
+        position: relative;
+        left: 50%;
+        margin-left: -25%;
+        color: #2b2b2b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 10%;
+        vertical-align: middle;
+    }
+
+    .aboutme-right-intro-list{
+        margin-bottom: 5px;
+    }
+
+    .aboutme-title{
+        margin-top: -20px;
+        margin-bottom: 25px;
+        color: #646566;
+        font-weight: 400;
+    }
+    
 }
+
+
 
 
 
@@ -654,8 +726,7 @@
      
      /* -----------------Aboutme------------------ */
  
-     #aboutMe{
-        display: none;
-    }
+    
+     
  
 } 
