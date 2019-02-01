@@ -88,6 +88,7 @@
         background-position: 50%;
         background-position-y: -120px;
         background-repeat: no-repeat;
+        display: block;
         width: 100%;
         height: 100%;
         position: relative;
@@ -124,6 +125,48 @@
         margin-top: 3px;
     }
 
+    .mobile-scroll-dowm{
+        display: none
+    }
+
+    .scroll-down{
+        /* display: block; */
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: 110px;
+        width: 60px;
+        margin-left: -30px;
+    }
+
+    .animation{
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        animation:animation 1.5s linear infinite;
+        animation-fill-mode: both;
+        animation-direction:alternate;
+        z-index: 999;
+        left: 50%;
+        margin-top: 42%;
+        margin-left:-25px;
+    }
+    
+    @keyframes animation{
+        from{
+            top:0px;
+            opacity: 0.5;
+        }
+        to{
+            top: 25px;
+            opacity: 1;
+        }
+    
+    }
+
+  
+    
     
     
 }
@@ -232,41 +275,53 @@
    .content-wrap{
        background-image: url(image/hello.png);
        background-size: cover;
-       background-position-x: -100px;
+       background-position-x: -120px;
        width: 100%;
        height: 650px;
-   }
-
-   .hello-content{
-    width: 45%;
-    height: 25%;
-    padding: 1%;
-    position: relative;
-    top: 375px;
-    left: 75%;
-    transform: translateX(-53%) translateY(50%);
-    background: rgba(255,255,255,.8);
-    outline:2px solid rgba(255,255,255,.8);
-    outline-offset: 5px;
-    text-align: center;
-
     }
 
-    .hello-name{
-        margin: 0px;
+    .hello-content{
+        display: none;
     }
 
-   .hello-introduction{
-    display: inline-block;
-    line-height: 150%;
-    vertical-align: middle;
+    .scroll-down{
+        display: none;
     }
 
-    .hello-introduction p{
-        text-align: justify;
-        margin-top: 10px;
-        font-size: 2vmin;
+    .mobile-scroll-dowm{
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: 80px;
+        width: 60px;
+        margin-left: -30px;
     }
+
+    .mobile-animation{
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        animation:mobile-animation 1.5s linear infinite;
+        animation-fill-mode: both;
+        animation-direction:alternate;
+        z-index: 999;
+        left: 50%;
+        margin-top: 42%;
+        margin-left:-25px;
+    }
+    
+    @keyframes mobile-animation{
+        from{
+            top:0px;
+            opacity: 0.5;
+        }
+        to{
+            top: 25px;
+            opacity: 1;
+        }
+    
+    };
 
 }
 
@@ -379,13 +434,53 @@
     .content-wrap{
         background-image: url(image/hello.png);
         background-size: cover;
-        background-position-x: -230px;
+        background-position-x: -120px;
         width: 100%;
         height: 650px;
-    }
+     }
  
-    .hello-content{
-        display: none;
-    }
+     .hello-content{
+         display: none;
+     }
+ 
+     .scroll-down{
+         display: none;
+     }
+ 
+     .mobile-scroll-dowm{
+         position: absolute;
+         z-index: 10;
+         left: 50%;
+         bottom: 80px;
+         width: 60px;
+         margin-left: -30px;
+     }
+ 
+     .mobile-animation{
+         position: absolute;
+         display: block;
+         width: 50px;
+         height: 50px;
+         animation:mobile-animation 1.5s linear infinite;
+         animation-fill-mode: both;
+         animation-direction:alternate;
+         z-index: 999;
+         left: 50%;
+         margin-top: 42%;
+         margin-left:-25px;
+     }
+     
+     @keyframes mobile-animation{
+         from{
+             top:0px;
+             opacity: 0.5;
+         }
+         to{
+             top: 25px;
+             opacity: 1;
+         }
+     
+     };
+ 
  
 } 
