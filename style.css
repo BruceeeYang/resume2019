@@ -1,6 +1,10 @@
 
 /* 桌面版面: 768px以上  */
 @media only screen and (min-width: 769px) {
+    body{
+        background-color: #dddddd;
+    }
+    
     body, .nav-bar{
         margin: 0px;
         font-family: Arial, Helvetica, sans-serif;
@@ -95,12 +99,12 @@
     }
 
     .hello-content{
-        width: 30%;
-        height: 20%;
-        padding: 1%;
         position: absolute;
+        width: 30%;
+        height: 7%;
+        padding: 1%;   
         right: -10%;
-        bottom: 37%;
+        bottom: 25%;
         transform: translateX(-53%) translateY(50%);
         background: rgba(255,255,255,.8);
         outline:2px solid rgba(255,255,255,.8);
@@ -123,6 +127,13 @@
         text-align: justify;
         font-size: 2vmin;
         margin-top: 3px;
+        color: #3b3b3b;
+        font-weight: 600;
+    }
+
+    .hello-introduction h4{
+        color: #181818;
+        font-weight: 800;
     }
 
     .mobile-scroll-dowm{
@@ -165,7 +176,155 @@
     
     }
 
-  
+    /* --------------About ME--------------- */
+
+    #aboutMe{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .aboutme-left {
+        padding: 0px;
+        max-width: 50%;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        /* position: relative; */
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 40%;
+    }
+    
+    .aboutme-left li {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        position: relative;
+    }
+    
+    .aboutme-left figure {
+        margin: 0;
+        position: relative;
+        box-shadow: 1px 10px 5px 5px #c4c1c1;
+
+    }
+    
+    .aboutme-left figure img {
+        max-width: 100%;
+        display: block;
+        position: relative;
+    }
+    
+    .aboutme-left figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        background: #2c3f52;
+    }
+    
+    .aboutme-left figcaption h3 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        padding-top: 30px;
+    }
+    
+    .aboutme-left figcaption div{
+        margin-left: 22%;
+        color: #e6e6e6;
+        padding-top: 15px;
+    }
+    
+    .aboutme-left figcaption a {
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 2px;
+        display: inline-block;
+        background: #afafaf;
+        color: #2b2b2b;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    /* aboutme-pic-style */
+    .aboutme-pic-style li {
+        perspective: 1700px;
+        perspective-origin: 0 50%;
+    }
+    
+    .aboutme-pic-style figure {
+        transform-style: preserve-3d;
+    }
+    
+    .aboutme-pic-style figure > div {
+        overflow: hidden;
+    }
+    
+    .aboutme-pic-style figure img {
+        transition: transform 0.4s;
+    }
+    
+    .no-touch .aboutme-pic-style figure:hover img,
+    .aboutme-pic-style figure.cs-hover img {
+        transform: translateX(10%);
+    }
+    
+    .aboutme-pic-style figcaption {
+        height: 100%;
+        width: 50%;
+        opacity: 0;
+        backface-visibility: hidden;
+        transform-origin: 0 0;
+        transform: rotateY(-90deg);
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+    }
+    
+    .no-touch .aboutme-pic-style figure:hover figcaption,
+    .aboutme-pic-style figure.cs-hover figcaption {
+        opacity: 1;
+        transform: rotateY(0deg);
+        transition: transform 0.4s, opacity 0.1s;
+    }
+    
+    .aboutme-pic-style figcaption a {
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+    }
+
+    .aboutme-right{
+        width: 60%;
+    }
+    
+    .aboutme-right-intro{
+        width: 50%;
+        position: relative;
+        left: 50%;
+        margin-left: -25%;
+        color: #2b2b2b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 10%;
+        vertical-align: middle;
+    }
+
+    .aboutme-right-intro-list{
+        margin-bottom: 5px;
+    }
+
+    .aboutme-title{
+        margin-top: -20px;
+        margin-bottom: 25px;
+        color: #646566;
+        font-weight: 400;
+    }
+
+
     
     
     
@@ -173,10 +332,13 @@
 
 /* 表格版面: 481px 到 768px。 */
 @media only screen and (min-width: 480px) and (max-width:768px){
+    body{
+        background-color: #dddddd;
+    }
+    
     body, .nav-bar{
         margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;  
-        
+        font-family: Arial, Helvetica, sans-serif;    
     }
     
     .nav{
@@ -323,16 +485,24 @@
     
     };
 
+    /* -----------------aboutme----------------- */
+    
+    .aboutMe{
+        display: none;
+    }
 }
 
 
 
 /* 行動版面: 480px 以下。 */
 @media only screen and (max-width: 480px) {
+    body{
+        background-color: #dddddd;
+    }
+    
     body, .nav-bar{
         margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-        
+        font-family: Arial, Helvetica, sans-serif;  
     }
     
     .nav{
@@ -481,6 +651,11 @@
          }
      
      };
+     
+     /* -----------------Aboutme------------------ */
  
+     #aboutMe{
+        display: none;
+    }
  
 } 
