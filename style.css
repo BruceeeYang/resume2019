@@ -300,17 +300,58 @@
     .aboutme-right{
         width: 60%;
     }
+
+    .bookmark-right:before{ 
+        content:'';
+        width:100%;  
+        height: 2.5%;  
+        border: 16px solid;  
+        border-color: transparent #bbbbbb transparent transparent ;   
+        position: absolute;  
+        right:100%;  
+        top: 0px;  
+    }
+
+    .bookmark-right{
+        width: 12%;  
+        height: 5%;  
+        background-color: #bbbbbb;  
+        font-size: 18px;  
+        line-height: 30px;  
+        text-align: center;  
+        position: absolute;  
+        margin-top: 30px;  
+        right: 0px;
+        font-weight: 600;
+        color:#4d4d4d;
+        letter-spacing: 8px;
+    }
+
+    .bookmark-right:after{  
+        content:'';
+        width:100%;
+        border: 16px solid;  
+        border-color: transparent transparent transparent #8a8a8a;   
+        border-top: 0;  
+        right: -88%;  
+        position: absolute;  
+        top: 100%;  
+    }
+
+    .bookmark-left{
+        display: none;
+    }
     
     .aboutme-right-intro{
-        width: 50%;
+        width: 60%;
         position: relative;
-        left: 50%;
+        left: 48%;
         margin-left: -25%;
         color: #2b2b2b;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 600;
-        padding-top: 10%;
+        padding-top: 8%;
         vertical-align: middle;
     }
 
@@ -319,8 +360,7 @@
     }
 
     .aboutme-title{
-        margin-top: -20px;
-        margin-bottom: 25px;
+        margin-top: 25px;
         color: #646566;
         font-weight: 400;
     }
@@ -543,6 +583,47 @@
         width: 60%;
         right: 0;
     }
+
+    .bookmark-right:before{ 
+        content:'';
+        width:100%;  
+        height: 2.5%;  
+        border: 14px solid;  
+        border-color: transparent #bbbbbb transparent transparent ;   
+        position: absolute;  
+        right:100%;  
+        top: 0px;  
+    }
+
+    .bookmark-right{
+        width: 11%;  
+        height: 15%;  
+        background-color: #bbbbbb;  
+        font-size: 2.2vmin;  
+        line-height: 30px;  
+        text-align: center;  
+        position: absolute;  
+        margin-top: 15px;  
+        right: 0px;
+        font-weight: 400;
+        color:#4d4d4d;
+        letter-spacing: 5px;
+    }
+
+    .bookmark-right:after{  
+        content:'';
+        width:100%;
+        border: 10px solid;  
+        border-color: transparent transparent transparent #8a8a8a;   
+        border-top: 0;  
+        right: -88%;  
+        position: absolute;  
+        top: 100%;  
+    }
+
+    .bookmark-left{
+        display: none;
+    }
     
     .aboutme-right-intro{
         width: 50%;
@@ -553,7 +634,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 2vmin;
         font-weight: 600;
-        padding-top: 5%;
+        padding-top: 3%;
         vertical-align: middle;
     }
 
@@ -562,8 +643,7 @@
     }
 
     .aboutme-title{
-        margin-top: -20px;
-        margin-bottom: 20px;
+        margin-top: 25px;
         color: #646566;
         font-weight: 400;
     }
@@ -773,16 +853,59 @@
         opacity: 0;
     }
 
+    .bookmark-right{
+        display: none;
+    }
+
+    .bookmark-left:before{
+        content:'';
+        width:10px;  
+        height: 0%;  
+        border: 13px solid;  
+        border-color: transparent #4a4f56 transparent  transparent ;   
+        border-top: 0;  
+        margin-left: -32px;  
+        position: absolute;  
+        top: 27px;
+    }
+
+    .bookmark-left{
+        width: 25%;  
+        height: 27px;  
+        background-color: #8a8a8a;  
+        font-size: 3.4vmin;  
+        line-height: 27px;  
+        text-align: center;  
+        position: relative;  
+        margin-top: 3%;  
+        left: 0px;  
+        font-weight: 400;
+        color:#e5e5e5;
+        letter-spacing: 8px;
+    }
+
+    .bookmark-left:after{
+        content:'';
+        width: 0px;  
+        height: 0%;  
+        border: 13px solid;  
+        border-color: transparent  transparent  transparent #8a8a8a;   
+        position: absolute;  
+        right:-26px;  
+        top: 0px; 
+    }
+
     .aboutme-right-intro-list{
         margin-bottom: 3px;
     }
 
     .aboutme-title{
-        margin-bottom: 15px;
+        margin-top: 15px;
         color: #646566;
         font-weight: 400;
     }
-    
+
+
     
 
  
