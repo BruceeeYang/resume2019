@@ -345,6 +345,7 @@
     .nav{
         position: fixed;
         margin-top: 0px;
+        z-index: 999;
         width: 100%;
     }
 
@@ -579,13 +580,14 @@
         background-color: #dddddd;
     }
     
-    body, .nav-bar{
+    body, .nav-bar, .nav{
         margin: 0px;
         font-family: Arial, Helvetica, sans-serif;  
     }
     
     .nav{
         position: fixed;
+        z-index: 999;
         margin-top: 0px;
         width: 100%;
     }
@@ -754,7 +756,7 @@
     .aboutme-right{
         position: relative;
         width: 85%;
-        height: 600px;
+        height: 800px;
         margin: auto;
 
     }
