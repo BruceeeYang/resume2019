@@ -355,6 +355,7 @@
 
     .aboutme-right-intro-list{
         margin-bottom: 5px;
+        letter-spacing: 2px;
     }
 
     .aboutme-title{
@@ -363,17 +364,17 @@
         font-weight: 400;
     }
 
-    /* --------------experence----------------- */
+    /* --------------experience----------------- */
 
 
-    .experence{
+    #experience{
         width: 100%;
         display: flex;
         flex-direction: row;
         margin-top: 12px;
     }
     
-    .experence-left{
+    .experience-left{
         width: 55%;
         height: 300px;
         /* border: 1px solid pink;    */
@@ -425,7 +426,7 @@
       #timeline section.year section h4 {
         position: absolute;
         bottom: 0;
-        font-size: 3vmin;
+        font-size: 17px;
         font-weight: 400;
         line-height: 1.2em;
         margin: 0;
@@ -520,20 +521,20 @@
         top: 0px; 
     }
 
-    .experence-right{
+    .experience-right{
         width: 45%;
         height: 300px;
         /* border: 1px solid red; */
     }
 
-    .experence-right img{
+    .experience-right img{
         width: 100%;
         margin-top: 20px;
     }
 
 
 
-    .experence-right {
+    .experience-right {
         padding: 0px;
         max-width: 100%;
         margin: 0;
@@ -544,7 +545,7 @@
         /* width: 40%; */
     }
     
-    .experence-right li {
+    .experience-right li {
         display: inline-block;
         width: 100%;
         margin: 0;
@@ -552,19 +553,19 @@
         position: relative;
     }
     
-    .experence-right figure {
+    .experience-right figure {
         margin: 0;
         position: relative;
     }
     
-    .experence-right figure img {
+    .experience-right figure img {
         max-width: 100%;
         height: 100%;
         display: block;
         position: relative;
     }
     
-    .experence-right figcaption {
+    .experience-right figcaption {
         position: absolute;
         top: 0;
         left: 0;
@@ -572,7 +573,7 @@
         background: #2c3f52;
     }
     
-    .experence-right figcaption h3 {
+    .experience-right figcaption h3 {
         margin-top: 50px;
         padding: 0;
         color: #fff;
@@ -580,7 +581,7 @@
         margin-left: 20%;
     }
     
-    .experence-right figcaption div{
+    .experience-right figcaption div{
         margin-left: 40%;
         color: #e6e6e6;
         /* padding-top: 5px; */
@@ -589,7 +590,7 @@
         font-weight: bold;
     }
     
-    .experence-right figcaption a {
+    .experience-right figcaption a {
         text-align: center;
         padding: 5px 10px;
         border-radius: 2px;
@@ -601,30 +602,30 @@
     
     }
     
-    /* experence-pic-style */
-    .experence-pic-style li {
+    /* experience-pic-style */
+    .experience-pic-style li {
         perspective: 1700px;
         perspective-origin: 0 50%;
     }
     
-    .experence-pic-stylee figure {
+    .experience-pic-stylee figure {
         transform-style: preserve-3d;
     }
     
-    .experence-pic-style figure > div {
+    .experience-pic-style figure > div {
         overflow: hidden;
     }
     
-    .experence-pic-style figure img {
+    .experience-pic-style figure img {
         transition: transform 0.4s;
     }
     
-    .no-touch .experence-pic-style figure:hover img,
-    .experence-pic-style figure.cs-hover img {
+    .no-touch .experience-pic-style figure:hover img,
+    .experience-pic-style figure.cs-hover img {
         transform: translateX(25%);
     }
     
-    .experence-pic-style figcaption {
+    .experience-pic-style figcaption {
         height: 94%;
         width: 50%;
         opacity: 0;
@@ -635,18 +636,27 @@
         transition: transform 0.4s, opacity 0.1s 0.3s;
     }
     
-    .no-touch .experence-pic-style figure:hover figcaption,
-    .experence-pic-style figure.cs-hover figcaption {
+    .no-touch .experience-pic-style figure:hover figcaption,
+    .experience-pic-style figure.cs-hover figcaption {
         opacity: 1;
         transform: rotateY(0deg);
         transition: transform 0.4s, opacity 0.1s;
     }
     
-    .experence-pic-style figcaption a {
+    .experience-pic-style figcaption a {
         position: absolute;
         bottom: 45px;
         right: 20px;
     }
+
+    .mobile-experience-img{
+        display: none;
+    }
+    
+    .mobile-experience-left{
+        display: none;
+    }
+
 
     
     
@@ -922,6 +932,7 @@
 
     .aboutme-right-intro-list{
         margin-bottom: 5px;
+        letter-spacing: 2px;
     }
 
     .aboutme-title{
@@ -931,10 +942,10 @@
     }
 
 
-    /* --------------experence----------------- */
+    /* --------------experience----------------- */
 
 
-    .experence{
+    #experience{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -942,7 +953,7 @@
         padding-top: 10px;
     }
     
-    .experence-left{
+    .experience-left{
         width: 55%;
         height: 300px;
     }
@@ -1030,6 +1041,10 @@
         color: #181818;
       }
 
+      .mobile-experience-left{
+          display: none;
+      }
+
       .bookmark-left:before{
         content:'';
         width:10px;  
@@ -1069,14 +1084,14 @@
         top: 0px; 
     }
 
-    .experence-right img{
+    .experience-right img{
         width: 100%;
         margin-top: 20px;
     }
 
 
 
-    .experence-right {
+    .experience-right {
         padding-top: 0px;
         padding-left: 2px;
         width: 50%;
@@ -1088,7 +1103,7 @@
         /* width: 40%; */
     }
     
-    .experence-right li {
+    .experience-right li {
         display: inline-block;
         width: 100%;
         margin: 0;
@@ -1096,19 +1111,19 @@
         position: relative;
     }
     
-    .experence-right figure {
+    .experience-right figure {
         margin: 0;
         position: relative;
     }
     
-    .experence-right figure img {
+    .experience-right figure img {
         max-width: 100%;
         height: 100%;
         display: block;
         position: relative;
     }
     
-    .experence-right figcaption {
+    .experience-right figcaption {
         position: absolute;
         top: 0;
         left: 0;
@@ -1116,7 +1131,7 @@
         background: #2c3f52;
     }
     
-    .experence-right figcaption h3 {
+    .experience-right figcaption h3 {
         margin-top: 50px;
         padding: 0;
         color: #fff;
@@ -1124,13 +1139,17 @@
         margin-left: 20%;
     }
     
-    .experence-right figcaption div{
+    .experience-right figcaption div{
         margin-left: 40%;
         color: #e6e6e6;
         /* padding-top: 5px; */
         margin-top: -15px;
         font-size: 17px;
         font-weight: bold;
+    }
+
+    .mobile-experience-img{
+        display: none;
     }
 
     
@@ -1381,6 +1400,7 @@
 
     .aboutme-right-intro-list{
         margin-bottom: 3px;
+        letter-spacing: 1px;
     }
 
     .aboutme-title{
@@ -1390,6 +1410,161 @@
     }
 
 
+    /* ------------Experience-------------- */
+
+    .experience-right{
+        display: none;
+    }
+
+    #experience{
+        width: 100%;
+        /* display: flex; */
+        flex-direction: row;
+        margin-top: 50px;
+        padding-top: 10px;
+    }
+
+    .mobile-experience-img{
+        width: 100%;
+    }
+
+    .mobile-experience-img img{
+        width: 100%;
+    }
+    
+    .experience-left{
+        width: 100%;
+        height: 300px;
+    }
+
+    #timeline {
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-top: 8%;
+        opacity: 0;
+      }
+      
+      .timeline-line:after {
+        content: '';
+        width: 2px;
+        position: absolute;
+        top: .5rem;
+        bottom: 0rem;
+        left: 65px;
+        z-index: 1;
+        background: #C5C5C5;
+      }
+      
+      #timeline h3 {
+        position: sticky;
+        color: #888;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      
+    
+      #timeline section.year {
+        position: relative;
+      }
+      
+      #timeline section.year section {
+        position: relative;
+        padding-bottom: 1.1em;
+        margin-bottom: .6em;
+      }
+      #timeline section.year section h4 {
+        position: absolute;
+        bottom: 0;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.2em;
+        margin: 0;
+        padding: 0 0 0 50%;
+        color: #888;
+      }
+      
+      #timeline section.year section ul {
+        list-style-type: none;
+        padding: 0 0 0 75px;
+        margin: -1.35rem 0 0em;
+        max-width: 32rem;
+        font-size: 1em;
+      }
+      
+    
+      #timeline section.year section ul:first-of-type:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #979797;;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        position: absolute;
+        left: 61px;
+        top: 6px;
+        z-index: 2;
+      }
+      
+      #timeline section.year section ul li {
+        margin-left: 1.5rem;
+        color: #181818;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+      #timeline section.year section ul li:before {
+        content: '-';
+        margin-left: -1.2rem;
+        padding-right: .3rem;
+        color: #181818;
+      }
+
+      .bookmark-left{
+          display: none;
+      }
+
+      .mobile-experience-left:before{
+        content:'';
+        width:10px;  
+        height: 0%;  
+        border: 13px solid;  
+        border-color: transparent #4a4f56 transparent  transparent ;   
+        border-top: 0;  
+        margin-left: -23px;  
+        position: absolute;  
+        top: 27px;
+    }
+
+    .mobile-experience-left{
+        width: 25%;  
+        height: 27px;  
+        background-color: #8a8a8a;  
+        font-size: 3.4vmin;  
+        line-height: 27px;  
+        text-align: center;  
+        position: relative;  
+        margin-top: 3%;  
+        left: 0px;  
+        font-weight: 400;
+        color:#e5e5e5;
+        letter-spacing: 8px;
+    }
+
+    .mobile-experience-left:after{
+        content:'';
+        width: 0px;  
+        height: 0%;  
+        border: 13px solid;  
+        border-color: transparent  transparent  transparent #8a8a8a;   
+        position: absolute;  
+        right:-26px;  
+        top: 0px; 
+    }
+
+     
+
+    
     
 
  
