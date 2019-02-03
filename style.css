@@ -360,6 +360,7 @@
 
     .aboutme-title{
         margin-top: 25px;
+        margin-bottom: 3px;
         color: #646566;
         font-weight: 400;
     }
@@ -1420,7 +1421,7 @@
         width: 100%;
         /* display: flex; */
         flex-direction: row;
-        margin-top: 50px;
+        margin-top: 15%;
         padding-top: 10px;
     }
 
@@ -1430,6 +1431,7 @@
 
     .mobile-experience-img img{
         width: 100%;
+        
     }
     
     .experience-left{
