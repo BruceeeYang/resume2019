@@ -368,6 +368,8 @@
         flex-direction: row;
         margin-top: 12px;
         height: 58%;
+        background-color: rgba(223, 223, 223, 0.753);
+        
     }
     
     .experience-left{
@@ -523,6 +525,8 @@
         margin: 0;
         text-align: left;
         position: relative;
+        top: 50%;
+        margin-top: -22%;
     }
     
     .experience-right figure {
@@ -535,6 +539,7 @@
         height: 100%;
         display: block;
         position: relative;
+        margin: 0px;
     }
     
     .experience-right figcaption {
@@ -597,10 +602,10 @@
     }
     
     .experience-pic-style figcaption {
-        height: 94%;
+        height: 100%;
         width: 50%;
         opacity: 0;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         backface-visibility: hidden;
         transform-origin: 0 0;
         transform: rotateY(-90deg);
@@ -633,7 +638,7 @@
     /* ------------language--------------- */
     #language{
         width: 100%;
-        height: 250px;
+        height: 300px;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -661,7 +666,7 @@
         position: absolute;
     }
 
-    .mobile-bookmark-right-language{
+    .mobile-bookmark-left-language{
         display: none;
     }
 
@@ -677,7 +682,7 @@
     }
 
     .bookmark-right-language{
-        width: 12%;  
+        width: 15%;  
         background-color: #bbbbbb;  
         font-size: 18px;  
         line-height: 30px;  
@@ -765,13 +770,13 @@
     margin:10px;
     border-radius: 20px;
     position: absolute;
-    right: 10%;
+    right: 2%;
     }
     
     
     .barra-nivel {
     height:20px; 
-    background:#444;
+    background:rgba(51, 70, 88, 0.877);
     width:0px;
     transition: width 1s ease;
     border-radius: 20px;
@@ -787,12 +792,89 @@
     left: 15px;
     }
 
+    /* --------------programming skills------------ */
+
+    #programmingskills{
+        widows: 100%;
+        height: 300px;
+        background-color: rgba(223, 223, 223, 0.753);;
+    }
+
+    .mobile-bookmark-left-programming{
+        display: none;
+    }
+
+    .bookmark-left-programming:before{
+        content:'';
+        width:10px;  
+        height: 0%;  
+        border: 15px solid;  
+        border-color: transparent #4a4f56 transparent  transparent ;   
+        border-top: 0;  
+        left: -15px;  
+        position: absolute;  
+        top: 29px;
+    }
+      
+      .bookmark-left-programming{
+        width: 12%;  
+        height: 10%;  
+        background-color: #bbbbbb;  
+        font-size: 18px;  
+        line-height: 30px;  
+        text-align: center;  
+        position: relative;  
+        top: 7%;  
+        left: 0px;  
+        font-weight: 600;
+        color:#4d4d4d;
+        letter-spacing: 5px;
+    }
 
 
-    
+    .bookmark-left-programming:after{
+        content:'';
+        width:20px;  
+        height: 0%;  
+        border: 15px solid;  
+        border-color: transparent  transparent  transparent #bbbbbb;   
+        position: absolute;  
+        right:-30px;  
+        top: 0px; 
+    }
 
-    
-    
+    .skillsList{
+        padding: 10px 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5%;
+      }
+      
+      .skill-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.2);
+        position: relative;
+        border: 4px solid #444;
+        font-size: 20px;
+        color: #444;
+        font-weight: 600;
+        text-align:center;
+        line-height:110px; 
+        box-sizing: border-box;
+        transition: all .3s ease-out;
+      }
+      
+      .skill-icon:hover, .skill-icon:active { 
+        background-color: rgb(44,63,82);
+        box-shadow: 0 0 10px 8px rgb(44,63,82);
+        border-color: #fff;
+        color: #fff;
+        }
+      
+
     
 }
 
@@ -1071,7 +1153,7 @@
     }
 
     .aboutme-title{
-        margin-top: 25px;
+        margin-top: 2%;
         color: #646566;
         font-weight: 400;
     }
@@ -1088,8 +1170,9 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        margin-top: 12px;
+        margin-top: 7%;
         padding-top: 10px;
+        background-color: rgba(223, 223, 223, 0.753);
     }
     
     .experience-left{
@@ -1198,7 +1281,7 @@
       
       .bookmark-left-experience{
         width: 22%;  
-        height: 15%;  
+        height: 14%;  
         background-color: #bbbbbb;  
         font-size: 2.2vmin;  
         line-height: 30px;  
@@ -1247,6 +1330,8 @@
         margin: 0;
         text-align: left;
         position: relative;
+        top: 50%;
+        margin-top: -35%;
     }
     
     .experience-right figure {
@@ -1320,7 +1405,7 @@
         position: absolute;
     }
 
-    .mobile-bookmark-right-language{
+    .mobile-bookmark-left-language{
         display: none;
     }
 
@@ -1427,13 +1512,13 @@
     margin:10px;
     border-radius: 20px;
     position: absolute;
-    right:3%;
+    right:0;
     }
     
     
     .barra-nivel {
     height:20px; 
-    background:#444;
+    background:rgba(51, 70, 88, 0.877);
     width:0px;
     transition: width 1s ease;
     border-radius: 20px;
@@ -1448,6 +1533,89 @@
     top: -2px;
     left: 15px;
     }
+
+
+    /* --------------programming skills------------ */
+
+    #programmingskills{
+        widows: 100%;
+        height: 230px;
+        background-color: rgba(223, 223, 223, 0.753);;
+    }
+
+    .mobile-bookmark-left-programming{
+        display: none;
+    }
+
+    .bookmark-left-programming:before{
+        content:'';
+        width:10px;  
+        height: 0%;  
+        border: 15px solid;  
+        border-color: transparent #4a4f56 transparent  transparent ;   
+        border-top: 0;  
+        left: -15px;  
+        position: absolute;  
+        top: 29px;
+    }
+      
+      .bookmark-left-programming{
+        width: 15%;  
+        height: 13%;  
+        background-color: #bbbbbb;  
+        font-size: 2.2vmin;  
+        line-height: 30px;  
+        text-align: center;  
+        position: relative;  
+        top: 7%;  
+        left: 0px;  
+        font-weight: 600;
+        color:#4d4d4d;
+        letter-spacing: 5px;
+    }
+
+
+    .bookmark-left-programming:after{
+        content:'';
+        width:20px;  
+        height: 0%;  
+        border: 15px solid;  
+        border-color: transparent  transparent  transparent #bbbbbb;   
+        position: absolute;  
+        right:-30px;  
+        top: 0px; 
+    }
+
+    .skillsList{
+        padding: 10px 8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5%;
+      }
+      
+      .skill-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.2);
+        position: relative;
+        border: 4px solid #444;
+        font-size: 16px;
+        color: #444;
+        font-weight: 600;
+        text-align:center;
+        line-height:90px; 
+        box-sizing: border-box;
+        transition: all .3s ease-out;
+      }
+      
+      .skill-icon:hover, .skill-icon:active { 
+        background-color: rgb(44,63,82);
+        box-shadow: 0 0 10px 8px rgb(44,63,82);
+        border-color: #fff;
+        color: #fff;
+        }
 
     
     
@@ -1523,7 +1691,9 @@
     }
 
     .icon-bar{
+        margin: 0;
         margin-top: 4px;
+        
     }
 
     .mobile-nav-bar-hide{
@@ -1862,7 +2032,7 @@
 
     #language{
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
         position: relative;
     }
     
@@ -1995,7 +2165,7 @@
     
     .barra-nivel {
     height:20px; 
-    background:#444;
+    background:rgba(51, 70, 88, 0.877);
     width:0px;
     transition: width 1s ease;
     border-radius: 20px;
@@ -2010,6 +2180,89 @@
     top: -2px;
     left: 15px;
     }
+
+
+    /* --------------programming skills------------ */
+
+    #programmingskills{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .bookmark-left-programming{
+        display: none;
+    }
+
+    .mobile-bookmark-left-programming:before{
+        content:'';
+        width:10px;  
+        height: 0%;  
+        border: 13px solid;  
+        border-color: transparent #4a4f56 transparent  transparent ;   
+        border-top: 0;  
+        margin-left: -44px;  
+        position: absolute;  
+        top: 27px;
+    }
+
+    .mobile-bookmark-left-programming{
+        width: 25%;  
+        height: 27px;  
+        background-color: #8a8a8a;  
+        font-size: 3.4vmin;  
+        line-height: 27px;  
+        text-align: center;  
+        position: relative;  
+        margin-top: 3%;  
+        left: 0px;  
+        font-weight: 400;
+        color:#e5e5e5;
+        letter-spacing: 8px;
+    }
+
+    .mobile-bookmark-left-programming:after{
+        content:'';
+        width: 0px;  
+        height: 0%;  
+        border: 13px solid;  
+        border-color: transparent  transparent  transparent #8a8a8a;   
+        position: absolute;  
+        right:-26px;  
+        top: 0px; 
+    }
+
+    .skillsList{
+        padding: 10px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5%;
+      }
+      
+      .skill-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.2);
+        position: relative;
+        border: 4px solid #444;
+        font-size: 13px;
+        color: #444;
+        font-weight: 600;
+        text-align:center;
+        line-height:70px; 
+        box-sizing: border-box;
+        transition: all .3s ease-out;
+      }
+      
+      .skill-icon:hover, .skill-icon:active { 
+        background-color: rgb(44,63,82);
+        box-shadow: 0 0 10px 8px rgb(44,63,82);
+        border-color: #fff;
+        color: #fff;
+        }
+
+    
 
  
 } 
