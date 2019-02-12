@@ -5,9 +5,9 @@ $(document).ready(function () {
     if (w>760) {
         $('#home').css('height',w*0.5);
     } else if (w>480 && w<760) {
-        $('#home').css('height',w*0.12);
+        $('#home').css('height',w*0.97);
     } else {
-        $('#home').css('height',w*1.8);
+        $('#home').css('height',w*1.5);
     }
 
 // ---------------------------------------------
@@ -100,4 +100,3 @@ $(document).ready(function () {
 
 
 });
-
