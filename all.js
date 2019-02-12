@@ -87,8 +87,11 @@ $(document).ready(function () {
 
             if( bottom_of_window >= bottom_of_object ){   
                 $(this).animate({
-                    width: valorLargura
-                },300);     
+                    'width: valorLargura'
+                :'1'},300); 
+                // return;
+            }else{
+                $(this).css('width',valorLargura);
             }
         }); 
     
