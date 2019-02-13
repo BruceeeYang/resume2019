@@ -1,6 +1,10 @@
 
 /* 桌面版面: 768px以上  */
 @media only screen and (min-width: 769px) {
+    *{
+        font-family: "montserrat";
+    }
+    
     body{
         background-color: #dddddd;
         width: 100%;
@@ -477,7 +481,7 @@
       
       .bookmark-left-experience{
         width: 20%;  
-        height: 7%;  
+        height: 8%;  
         background-color: #bbbbbb;  
         font-size: 18px;  
         line-height: 30px;  
@@ -866,7 +870,7 @@
         background-color: rgba(255,255,255,.2);
         position: relative;
         border: 4px solid #444;
-        font-size: 20px;
+        font-size: 19px;
         color: #444;
         font-weight: 600;
         text-align:center;
@@ -886,7 +890,7 @@
 
     #participation{
         widows: 100%;
-        height: 400px;
+        height: 520px;
         padding-top: 70px;
         margin-top: -70px;
     }
@@ -1079,6 +1083,206 @@
         display: none;
     }
 
+    /* ------------------contant Me------------------ */
+    .contantlist{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: row;    
+        /* border: 1px solid blue; */
+    }
+
+    .contantlist-left{
+        width: 40%;
+        height: 100%;
+        /* border: 1px solid pink; */
+    }
+
+    .contantlist-right{
+        width: 60%;
+        height: 100%;
+        /* border: 1px solid red; */
+        position: relative;
+    }
+
+    .middle{
+        position: absolute;
+
+    }
+    .card{
+        cursor: pointer;
+        width: 25%;
+        height: 75%;
+        margin-left: 12%;
+        margin-top: 2%;
+    }
+    .front,.back{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .8s linear;
+    }
+    .front img{
+        height: 100%;
+    }
+    .front{
+        border:1px solid #2c3e50;
+        border-radius: 5px;
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .back{
+        background: #2c3e50;
+        border:1px solid #2c3e50;
+        border-radius: 5px;
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .back-content{
+        color: #f1f1f1;
+        text-align: center;
+        width: 100%;
+        top: 30%;
+    }
+    
+    .back-content span{
+        color: #f1f1f1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card:hover > .front{
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    .card:hover > .back{
+        transform: perspective(600px) rotateY(0deg);
+    }
+        
+    .text-3d {
+        text-transform: uppercase;
+        width: 60%;
+        font-size: 10vmin;
+        color:rgb(223, 223, 223);
+        position: absolute;
+        top: 3%;
+        left:20%;
+        transform: translate(0% ,0%);
+        text-shadow:
+                        0 1px 0 rgb(190,190,190),
+                        0 2px 0 rgb(185,185,185),
+                        0 3px 0 rgb(180,180,180),
+                        0 4px 0 rgb(175,175,175),
+                        0 5px 0 rgb(170,170,170),
+                        0 6px 0 rgb(165,165,165),
+                        0 7px 0 rgb(160,160,160),
+                        0 1px 5px rgba(0,0,0,.05),
+                        0 3px 5px rgba(0,0,0,.10),
+                        0 5px 10px rgba(0,0,0,.15),
+                        0 7px 10px rgba(0,0,0,.20),
+                        0 10px 15px rgba(0,0,0,.25);
+        transition: all 0.3s ease-in-out;        
+        cursor: pointer;
+    }
+    .text-3d:hover {
+        text-shadow:
+                        0 1px 0 rgb(190,190,190),
+                        0 2px 0 rgb(185,185,185),
+                        0 3px 0 rgb(180,180,180),
+                        0 4px 0 rgb(175,175,175),
+                        0 5px 0 rgb(170,170,170),
+                        0 6px 0 rgb(165,165,165),
+                        0 7px 0 rgb(160,160,160),
+                        0 8px 0 rgb(155,155,155),
+                        0 9px 0 rgb(150,150,150),
+                        0 1px 5px rgba(0,0,0,.05),
+                        0 5px 5px rgba(0,0,0,.10),
+                        0 10px 10px rgba(0,0,0,.15),
+                        0 15px 10px rgba(0,0,0,.20),
+                        0 20px 15px rgba(0,0,0,.25);
+        color:rgb(209, 209, 209);
+        transform: translate(1%,1%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contantinfro{
+        width: 60%;
+        height: 50%;
+        position: absolute;
+        top: 30%;
+        left:20%;
+    }
+
+        
+    .inforList{
+    margin: 20px 0;
+    }
+
+    .inforList a{
+    display: inline-flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background:rgb(223, 223, 223);;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+
+    }
+
+    .inforList a:hover{
+    background: #2c3e50;
+    color: white;
+    }
+
+
+    .inforList{
+        margin: 20px 0;
+    }
+    
+    .inforList a{
+        display: inline-flex;
+        width: 100px;
+        height: 40px;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        background:rgb(194, 194, 194);;
+        color: #2c3e50;
+        font-size: 18px;
+        transition: 0.4s;
+
+    }
+
+    .inforList a:hover{
+        background: #2c3e50;
+        color: white;
+    }
+
+
+    .inforList ul li{
+        margin-bottom: 7%;
+    }
+    
+    .inforDetail{
+        font-size: 18px;
+        margin-left: 5%;
+        color: rgb(80, 80, 80);
+    }
+
+    footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #d3d3d3;
+        color: #535353;
+        position: relative;
+        bottom: 0px;
+        text-align: right;
+        box-shadow:2px 0px 5px 1px #cccccc;
+    }
+
+        
 
 
 
