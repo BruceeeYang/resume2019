@@ -2662,7 +2662,7 @@
         line-height: 27px;  
         text-align: center;  
         position: relative;  
-        margin-top: 3%;  
+        margin-top: 5%;  
         left: 0px;  
         font-weight: 400;
         color:#e5e5e5;
@@ -3291,11 +3291,11 @@
     } 
 
     .contantinfro{
-        width: 90%;
+        width: 95%;
         height: 50%;
         position: absolute;
         top: 25%;
-        left:5%;
+        left: 5%;
     }
 
         
@@ -3305,7 +3305,7 @@
 
     .inforList a{
     display: inline-flex;
-    width: 100px;
+    width: 75px;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -3345,6 +3345,10 @@
         color: white;
     }
 
+    .inforList ul {
+       padding: 0px;
+    }
+
 
     .inforList ul li{
         margin-bottom: 7%;
@@ -3352,7 +3356,7 @@
     
     .inforDetail{
         font-size: 16px;
-        margin-left: 5%;
+        margin-left: 4%;
         color: rgb(80, 80, 80);
     }
 
