@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    
-    // var w = window.innerWidth;
-    // console.log(w);
-    // if (w>760) {
-    //     $('#home').css('height',w*0.5);
-    // } else if (w>480 && w<760) {
-    //     $('#home').css('height',w*0.97);
-    // } else {
-    //     $('#home').css('height',w*1.5);
-    // }
 
     $(window).resize(function() {
         var w =$(window).width();
@@ -17,7 +7,7 @@ $(document).ready(function () {
         } else if (w>480 && w<760) {
             $('#home').css('height',w*0.97);
         } else {
-            $('#home').css('height',w*1.5);
+            $('#home').css('height',w*1.6);
         }
     });
 
@@ -30,7 +20,7 @@ $(document).ready(function () {
     } else if (w>480 && w<760) {
         $('.scroll-down').css('bottom',s*0.12);
     } else {
-        $('.mobile-scroll-dowm').css('bottom',s*0.2);
+        $('.mobile-scroll-dowm').css('bottom',s*0.3);
     }
 
 // ----------------------------------------------
@@ -168,7 +158,7 @@ $(document).ready(function () {
 
     // ------------------------------------------
 
-        
+
     
 
 
