@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShengTim</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#muteYouTubeVideoPlayer{
+			margin: 0px;
+			padding: 0px;
+		}
+	</style>
+
+</head>
+<body>
+		
+	<div id="muteYouTubeVideoPlayer"></div>
+ 
+	<script async src="https://www.youtube.com/iframe_api"></script>
+	<script>
+	 function onYouTubeIframeAPIReady() {
+	  var player;
+	  var w = document.documentElement.clientWidth;
+	  var h = document.documentElement.clientHeight;
+	  player = new YT.Player('muteYouTubeVideoPlayer', {
+	    videoId: 'BNWO13Rwpko',    // YouTube 影片ID
+	    width: w,              	 // 播放器寬度 (px)
+	    height: h,            // 播放器高度 (px)
+	    playerVars: {
+	      autoplay: 1,             // 在讀取時自動播放影片
+	      controls: 0,             // 在播放器顯示暫停／播放按鈕
+	      showinfo: 0,             // 隱藏影片標題
+	      modestbranding: 0,       // 隱藏YouTube Logo
+	      loop: 1,                 // 讓影片循環播放
+	      fs: 0,                   // 隱藏全螢幕按鈕
+	      cc_load_policty: 0,      // 隱藏字幕
+	      // iv_load_policy: 3,       // 隱藏影片註解
+	      autohide: 1,             // 當播放影片時隱藏影片控制列
+	      rel:0,
+	    },
+	    events: {
+	      onReady: function(e) {
+	        e.target.mute();
+	      }
+	    }
+	  });
+	 }
+	 
+	 
+	</script>
+	
+</body>
+</html>
